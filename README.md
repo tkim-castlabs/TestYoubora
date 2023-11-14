@@ -8,4 +8,4 @@
 * But, still had to add `pod 'YouboraLib', '6.7.6'` to the `AwesomeProject/ios/Podfile`.
 * Imported the `MyYoubora.framework` by just drag and drop to the `AwesomeProject` project - not used cocoapods.
 * Open the `AwesomeProject/ios/AwesomeProject.xcworkspace`
-* Refer the `AwesomeProject/ios/MyView.swift'
+* Refer the `AwesomeProject/ios/MyView.swift`

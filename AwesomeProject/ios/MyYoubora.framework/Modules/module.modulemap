@@ -1,0 +1,11 @@
+framework module MyYoubora {
+  umbrella header "MyYoubora.h"
+  export *
+
+  module * { export * }
+}
+
+module MyYoubora.Swift {
+  header "MyYoubora-Swift.h"
+  requires objc
+}

@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Pods for MyYoubora
+
+
+target 'MyYoubora' do
+  platform :ios, '13.0'
+  # Other dependencies for 'MyYoubora'
+
+  use_frameworks! :linkage => :static
+  pod 'YouboraLib', '6.7.6'
+end
+
+target 'MyYouboraTV' do
+  platform :tvos, '13.0'
+  # Other dependencies for 'MyYouboraTV'
+end

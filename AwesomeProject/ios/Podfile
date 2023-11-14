@@ -50,13 +50,15 @@ target 'AwesomeProject' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'PRESTOPlay', VERSION
+  pod 'CastlabsApple', VERSION
+  pod 'CastlabsYoubora', VERSION
+  pod 'YouboraLib', '6.7.6'
+
   target 'AwesomeProjectTests' do
     inherit! :complete
     # Pods for testing
-    pod 'PRESTOPlay', VERSION
-    pod 'CastlabsApple', VERSION
-    pod 'CastlabsYoubora', VERSION
-    # pod 'YouboraLib'
+
   end
 
   post_install do |installer|

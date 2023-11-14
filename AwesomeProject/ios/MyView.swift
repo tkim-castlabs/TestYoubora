@@ -7,25 +7,15 @@
 
 import Foundation
 import UIKit
-import PRESTOPlay
-import CastlabsApple
-import YouboraLib
-import MyYoubora
 import React
+import MyYoubora
 
 @objc
 public class MyView: UIView {
 
-  var options: YBOptions?
-
   func test() {
-    options = YBOptions()
-    options?.accountCode = "abcd"
-    
     let client = MyYouboraClient()
     client.test()
   }
-
-
-
+  
 }

@@ -22,15 +22,23 @@
 		</data>
 		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		1JMr5498WFb8Mrf7PqQ3O/HCei0=
+		</data>
+		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		7DMXv4/Cbgw5fCT+Za9ASQzCVsk=
 		</data>
 		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
 		7Blk6TmkH2vX9l/eeziBq+D4InU=
 		</data>
+		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		7DMXv4/Cbgw5fCT+Za9ASQzCVsk=
+		</data>
 		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		t/ampsNw4YK50XhH4tz7gMrG5dA=
+		2uXjisEtvQpHb8w3Amt+G3oZ//w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -64,7 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			Tb/7mf7Q15uugUjG/9PL1FoO8myBnW6aN4wacPenPAc=
+			</data>
+		</dict>
+		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xrw7Q6hppW6J4Op8hgm280wzVGFnokb9Pc9SWFZJ1Vg=
 			</data>
 		</dict>
 		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -74,11 +89,18 @@
 			2Bg7IM4EIi+ZOGpGlZmD0Vq4+kLYL0bvQuiRYRmJU9c=
 			</data>
 		</dict>
+		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xrw7Q6hppW6J4Op8hgm280wzVGFnokb9Pc9SWFZJ1Vg=
+			</data>
+		</dict>
 		<key>Modules/MyYoubora.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZzTF88bR+zhKKR0yVqFrkHHx9xkg5ZTPw7LnE82d/0=
+			XK3IVnDVp7fyfvoWGYj1yik+jA4sDK+xtKJD74sVQOs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

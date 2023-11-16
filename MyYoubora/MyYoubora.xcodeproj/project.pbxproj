@@ -406,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7AB96E685B9F31153085F02 /* Pods-MyYoubora.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -441,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BBEC1609B0EF35E341F6BF6 /* Pods-MyYoubora.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

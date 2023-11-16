@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000183">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to ios build_device_framework lane" time="0.000102">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: xcodebuild" time="6.752026">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: rsync -rLvptgoD build/Build/Products/Release-iphoneos/MyYoubora.framework frameworks/device/ios/" time="0.021983">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: create_xcframework" time="0.8001">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,98 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+rsyncCmd = "rsync -rLvptgoD"
+buildProductsPath = "build/Build/Products"
+
+default_platform(:ios)
+
+platform :ios do
+
+  lane :build_device_framework do |options|
+    sdk = "iphoneos"
+    device_family =  "TARGETED_DEVICE_FAMILY=1,2"
+    deployment_target = "IPHONEOS_DEPLOYMENT_TARGET=13.0"
+
+    xcodebuild(
+      workspace: "MyYoubora.xcworkspace",
+      scheme: get_scheme_name(options),
+      configuration: "Release",
+      sdk: sdk,
+      arch: "arm64",
+      derivedDataPath: "build",
+      build: true,
+      xcargs: "#{device_family} #{deployment_target}"
+    )
+
+    Dir.chdir("..") do
+      if "tvos" == options[:os]
+        sh("#{rsyncCmd} #{buildProductsPath}/Release-appletvos/MyYoubora.framework frameworks/device/tvos/")
+      else
+        sh("#{rsyncCmd} #{buildProductsPath}/Release-iphoneos/MyYoubora.framework frameworks/device/ios/")
+      end
+    end
+  end
+
+  lane :build_simulator_framework do |options|
+    sdk = "iphonesimulator"
+    device_family =  "TARGETED_DEVICE_FAMILY=1,2"
+    deployment_target = "IPHONEOS_DEPLOYMENT_TARGET=13.0"
+
+    default_sim_archs = "-arch arm64 -arch x86_64 SKIP_INSTALL=NO #{device_family} #{deployment_target}"
+
+    xcodebuild(
+      workspace: "MyYoubora.xcworkspace",
+      scheme: get_scheme_name(options),
+      configuration: "Release",
+      sdk: sdk,
+      xcargs: default_sim_archs,
+      derivedDataPath: "build",
+      build: true
+    )
+
+    Dir.chdir("..") do
+      if "tvos" == options[:os]
+        sh("#{rsyncCmd} #{buildProductsPath}/Release-appletvsimulator/MyYoubora.framework frameworks/simulator/tvos/")
+      else
+        sh("#{rsyncCmd} #{buildProductsPath}/Release-iphonesimulator/MyYoubora.framework frameworks/simulator/ios/")
+      end
+    end
+  end
+
+  def get_scheme_name(options)
+      return "MyYoubora"
+  end
+
+
+  desc "Description of what the lane does"
+  lane :build do
+    # add actions here: https://docs.fastlane.tools/actions
+
+    os_dir = "ios"
+    FileUtils::mkdir_p "../frameworks/device/#{os_dir}"
+    FileUtils::mkdir_p "../dSYMs/device/#{os_dir}"
+    FileUtils::mkdir_p "../frameworks/simulator/#{os_dir}"
+    FileUtils::mkdir_p "../dSYMs/simulator/#{os_dir}"
+
+    build_device_framework()
+    # build_simulator_framework()
+
+    valid_frameworks = Array["frameworks/device/ios/MyYoubora.framework"]
+    # valid_frameworks.push("frameworks/simulator/ios/MyYoubora.framework")
+
+    create_xcframework(frameworks: valid_frameworks, output: "frameworks/MyYoubora.xcframework")
+
+  end
+end

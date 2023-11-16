@@ -3,7 +3,337 @@
     "kind": "Root",
     "name": "TopLevel",
     "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyYoubora",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "YouboraLib",
+        "printedName": "YouboraLib",
+        "declKind": "Import",
+        "moduleName": "MyYoubora"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyYouboraClient",
+        "printedName": "MyYouboraClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "options",
+            "printedName": "options",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "YouboraLib.YBOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "YBOptions",
+                    "printedName": "YouboraLib.YBOptions",
+                    "usr": "c:objc(cs)YBOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvp",
+            "mangledName": "$s9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvp",
+            "moduleName": "MyYoubora",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "YouboraLib.YBOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "YBOptions",
+                        "printedName": "YouboraLib.YBOptions",
+                        "usr": "c:objc(cs)YBOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvg",
+                "mangledName": "$s9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvg",
+                "moduleName": "MyYoubora",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "YouboraLib.YBOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "YBOptions",
+                        "printedName": "YouboraLib.YBOptions",
+                        "usr": "c:objc(cs)YBOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvs",
+                "mangledName": "$s9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvs",
+                "moduleName": "MyYoubora",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvM",
+                "mangledName": "$s9MyYoubora0aB6ClientC7optionsSo9YBOptionsCSgvM",
+                "moduleName": "MyYoubora",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyYouboraClient",
+                "printedName": "MyYoubora.MyYouboraClient",
+                "usr": "c:@M@MyYoubora@objc(cs)MyYouboraClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "YouboraLib.YBOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "YBOptions",
+                    "printedName": "YouboraLib.YBOptions",
+                    "usr": "c:objc(cs)YBOptions"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MyYoubora0aB6ClientC7optionsACSo9YBOptionsCSg_tcfc",
+            "mangledName": "$s9MyYoubora0aB6ClientC7optionsACSo9YBOptionsCSg_tcfc",
+            "moduleName": "MyYoubora",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyYoubora.MyYouboraClient?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyYouboraClient",
+                    "printedName": "MyYoubora.MyYouboraClient",
+                    "usr": "c:@M@MyYoubora@objc(cs)MyYouboraClient"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MyYoubora0aB6ClientC5coderACSgSo7NSCoderC_tcfc",
+            "mangledName": "$s9MyYoubora0aB6ClientC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MyYoubora",
+            "declAttributes": [
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "test",
+            "printedName": "test()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MyYoubora0aB6ClientC4testyyF",
+            "mangledName": "$s9MyYoubora0aB6ClientC4testyyF",
+            "moduleName": "MyYoubora",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyYouboraClient",
+                "printedName": "MyYoubora.MyYouboraClient",
+                "usr": "c:@M@MyYoubora@objc(cs)MyYouboraClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyYoubora@objc(cs)MyYouboraClient(im)init",
+            "mangledName": "$s9MyYoubora0aB6ClientCACycfc",
+            "moduleName": "MyYoubora",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyYoubora@objc(cs)MyYouboraClient",
+        "mangledName": "$s9MyYoubora0aB6ClientC",
+        "moduleName": "MyYoubora",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/taewookim\/Downloads\/test\/MyYoubora\/MyYoubora\/MyYoubora.swift",
+      "kind": "StringLiteral",
+      "offset": 139,
+      "length": 15,
+      "value": "\"MyYoubora.MyYouboraClient\""
+    }
+  ]
 }
